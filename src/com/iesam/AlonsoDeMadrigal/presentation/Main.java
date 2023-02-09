@@ -101,11 +101,28 @@ public class Main {
 
     public void printTeacher(Teacher teacher) {
 
-        System.out.println("cod: " +  teacher.getId() + "Name" + teacher.getName() + "Surname" + teacher.setSurname()
-        + "Dni" + teacher.getDni() + "Adress" + teacher.getAdress()+ "AcademicTitle"
-                + teacher.getAcademicTitle() + "RegistDate" );
+        System.out.println("cod: " +  teacher.getId() + "Name" + teacher.getName() + "Surname" + teacher.getSurname()
+        + "Dni" + teacher.getDni() + "Adress" + teacher.getAdress() + "AcademicTitle"
+                + teacher.getAcademicTitle() + "RegistDate" +teacher.getRegistDate() );
 
     }
+
+    public void printTeachingRoom(TeachingRoom teachingRoom) {
+
+        System.out.println("cod: " + teachingRoom.getId() + "floor:" + teachingRoom.getFloor()
+        + "chairNum"+ teachingRoom.getChairNum() + "capacity" + teachingRoom.getCapacity()
+        + "boardType" + teachingRoom.getBoardType());
+
+    }
+
+    public void printPcClassRoom(PcClassroom pcClassroom) {
+
+        System.out.println("cod: " + pcClassroom.getId() + "Floor:" + pcClassroom.getFloor()
+        + "ChairNum" + pcClassroom.getPcNumber() + "Capacity" + pcClassroom.getCapacity()
+        + "pcType" + pcClassroom.getPcType());
+
+    }
+
 }
 
 
