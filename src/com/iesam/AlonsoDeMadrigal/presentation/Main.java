@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args) {
 
 
-
         Course course = new Course();
         System.out.println("Course");
         course.setId("1");
@@ -16,15 +15,12 @@ public class Main {
         Subject subject = new Subject();
         System.out.println("Subject");
         subject.setId("001");
-        subject.setName("Matematicas ");
+        subject.setName("Matematicas");
 
 
         Registration registration = new Registration();
         System.out.println("Registration");
         registration.setId("10");
-        registration.setDescription("Sistemas Operativo Monopuestos ");
-
-
 
 
         Pupil pupil = new Pupil();
@@ -50,7 +46,6 @@ public class Main {
         teacher.setRegistDate("20/15/2020");
 
 
-
         Classroom classroom = new Classroom();
 
         TeachingRoom teachingRoom = new TeachingRoom();
@@ -69,5 +64,48 @@ public class Main {
         pcClassroom.setPcType("destop");
 
 
+        // printCourse(course);
+        // printSubject(subject);
+        // printRegistration(registration);
+        // printPupil(pupil);
+        // printTeacher(teacher);
+        // printTeachingRoom(teachingRoo);
+        // printPcClassroom(PcClassroom);
+
+
+    }
+
+    public void printCourse(Course course) {
+
+        System.out.println("cod: " + course.getId() + "Name:" + course.getName() + "Description" + course.getDescription());
+
+    }
+
+    public void printSubject(Subject subject) {
+
+        System.out.println("cod: " + subject.getId() + "Name:" + subject.getName() );
+
+    }
+
+    public void printRegistration(Registration registration) {
+
+        System.out.println("cod: " + registration.getId() );
+    }
+
+    public void printPupil(Pupil pupil) {
+        System.out.println("cod: " + pupil.getId() + "Name" + pupil.getName() + "Surname: " + pupil.getSurname() +
+                "Dni" + pupil.getDni() + "Adress" + pupil.getAdress() + "Mother" + pupil.getMother() +
+                "Father" + pupil.getFather() + "Email" + pupil.getEmail());
+
+    }
+
+    public void printTeacher(Teacher teacher) {
+
+        System.out.println("cod: " +  teacher.getId() + "Name" + teacher.getName() + "Surname" + teacher.setSurname()
+        + "Dni" + teacher.getDni() + "Adress" + teacher.getAdress()+ "AcademicTitle"
+                + teacher.getAcademicTitle() + "RegistDate" );
+
     }
 }
+
+
